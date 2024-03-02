@@ -1,8 +1,10 @@
 package Seguimiento5;
 
+
 import java.util.Date;
 
-public class Empleado{
+
+public class Empleado {
     private String nombre;
     private String apellido;
     private String genero;
