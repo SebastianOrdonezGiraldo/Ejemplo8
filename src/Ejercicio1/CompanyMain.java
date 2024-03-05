@@ -1,4 +1,4 @@
-package Seguimiento5;
+package Ejercicio1;
 
 import javax.swing.JOptionPane;
 import java.util.Date;

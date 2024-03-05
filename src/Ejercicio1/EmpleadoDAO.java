@@ -1,4 +1,4 @@
-package Seguimiento5;
+package Ejercicio1;
 
 import javax.swing.*;
 import java.util.ArrayList;
