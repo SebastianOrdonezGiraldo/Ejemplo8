@@ -12,9 +12,11 @@ public class TurnoMain {
         LocalTime horaFin = LocalTime.parse(horaFinInput);
         Turno turnoEjemplo = new Turno(horaInicio, horaFin, "Day shift");
         JOptionPane.showMessageDialog(null,
-                "Hora de inicio del turno: " + turnoEjemplo.getHoraInicio() +
-                        "\nHora de fin del turno: " + turnoEjemplo.getHoraFin() +
-                        "\nDescripción del turno: " + turnoEjemplo.toString(),
-                "Turno Information", JOptionPane.INFORMATION_MESSAGE);
+                "Shift start time: " + turnoEjemplo.getHoraInicio() +
+                        "\nEnd of shift time: " + turnoEjemplo.getHoraFin() +
+                        "\nTotal hours worked: " + turnoEjemplo.getHorasTrabajadas() +
+                        "\nShift Type: " + turnoEjemplo.getTipoTurno() +
+                        "\nShift Description: " + turnoEjemplo.toString(),
+                "Shift Information", JOptionPane.INFORMATION_MESSAGE);
     }
 }
