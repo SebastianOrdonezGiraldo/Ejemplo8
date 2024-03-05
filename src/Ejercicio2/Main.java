@@ -6,10 +6,10 @@ public class Main {
     public static void main(String[] args) {
 
         ProcesoDAO procesoDAO = new ProcesoDAO();
-        String[] opciones = {"Ver saldos","Consignar Cuenta Ahorros","Retirar Cuenta Ahorros","Consignar Cuenta Corriente","Retirar Cuenta Corriente","Invertir en CDT","Cerrar CDT","Salir"};
+        String[] opciones = {"View balances", "Deposit Savings Account", "Withdraw Savings Account", "Deposit Checking Account", "Withdraw Checking Account", "Invest in CDT", "Close CDT", "Exit"};
         boolean flag = true;
         do{
-            int options = JOptionPane.showOptionDialog(null, "Seleccione la opcion", "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, opciones, opciones[0]);
+            int options = JOptionPane.showOptionDialog(null, "Select an option", "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, opciones, opciones[0]);
             switch (options){
                 case 0:
                     procesoDAO.verSaldo();
