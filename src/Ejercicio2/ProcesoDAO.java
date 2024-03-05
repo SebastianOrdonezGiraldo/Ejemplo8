@@ -3,7 +3,7 @@ package Ejercicio2;
 import javax.swing.*;
 
 public class ProcesoDAO {
-    Persona persona = new Persona("1005133059","Luis Cohecha","Bioma");
+    Persona persona = new Persona("1092850181","Sebastian","Cabo de la vela");
     CuentaAhorro cuentaAhorro = new CuentaAhorro("2384-7012-8408",1000000,0.6f);
     CuentaCorriente cuentaCorriente = new CuentaCorriente("1235-2472-8482",5000000);
     CuentaCDT cuentaCDT = new CuentaCDT();
