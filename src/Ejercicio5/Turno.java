@@ -1,37 +1,38 @@
 package Ejercicio5;
 
+import java.time.LocalTime;
+
 public class Turno {
-    private double starTime;
-    private double endTime;
-    private String description;
+    private LocalTime horaInicio;
+    private LocalTime horaFin;
+    private String descripcion;
 
-    public Turno(double starTime, double endTime, String description) {
-        this.starTime = starTime;
-        this.endTime = endTime;
-        this.description = description;
+    // Constructor
+    public Turno(LocalTime horaInicio, LocalTime horaFin, String descripcion) {
+        this.horaInicio = horaInicio;
+        this.horaFin = horaFin;
+        this.descripcion = descripcion;
     }
 
-    public double getStarTime() {
-        return starTime;
+    // Getter para horaInicio
+    public LocalTime getHoraInicio() {
+        return horaInicio;
     }
 
-    public void setStarTime(double starTime) {
-        this.starTime = starTime;
+    // Getter para horaFin
+    public LocalTime getHoraFin() {
+        return horaFin;
     }
 
-    public double getEndTime() {
-        return endTime;
+    // Setter para descripcion
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
-    public void setEndTime(double endTime) {
-        this.endTime = endTime;
-    }
+    // Método toString para devolver la descripción
+    @Override
+    public String toString() {
+        return descripcion;
+    }}
 
-    public String getDescription() {
-        return description;
-    }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-}
